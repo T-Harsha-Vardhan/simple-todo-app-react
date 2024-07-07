@@ -1,0 +1,62 @@
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fafafa;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 27px;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .check-box {
+      margin: 0 25px 0 22px;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 5px;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    .check-box-active {
+      background-color: #5bdc2e;
+    }
+
+    .task-text {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+
+  .right {
+    display: flex;
+
+    p {
+      margin-right: 14px;
+      height: 35px;
+      width: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .edit {
+      background-color: #d7db1e;
+    }
+
+    .delete {
+      background-color: #e43434;
+    }
+  }
+}
